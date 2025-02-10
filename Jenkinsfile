@@ -16,11 +16,11 @@ pipeline {
             steps {
                 // Clone the repository
                 //git branch: 'main', changelog: false, poll: false, url: 'http://139.84.159.194:5555/dasher-org/jenkins-hello-world.git'
-                script{
+               /*  script{
                 for(int i = 0;i<10;i++){
-                sh "echo sleeping for $i"
+                sh "echo "sleeping for $i""
                 sleep(1)}
-                }
+                }*/
                 // Run Maven commands
                 sh 'mvn clean package -DskipTests=true'
             }

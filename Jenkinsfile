@@ -19,7 +19,7 @@ pipeline {
                 script{
                 for(int i = 0;i<10;i++){
                 sh "sleeping for $i"
-                sleep(1)}
+                sh "sleep(1)"}
                 }
                 // Run Maven commands
                 sh 'mvn clean package -DskipTests=true'
